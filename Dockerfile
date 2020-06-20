@@ -1,4 +1,4 @@
-FROM alpine:3.11
+FROM alpine:3.12
 
 # Install necessary things
 RUN apk add --no-cache \
@@ -25,7 +25,7 @@ RUN apk add --no-cache \
 # Get rainloop.
 RUN mkdir -p /var/www/rainloop && \
     cd /var/www/rainloop && \
-    wget https://github.com/RainLoop/rainloop-webmail/releases/download/v1.13.0/rainloop-community-1.13.0.zip && \
+    wget https://github.com/RainLoop/rainloop-webmail/releases/download/v1.14.0/rainloop-community-1.14.0.zip && \
     ls -la && \
     unzip rainloop-community-*.zip && \
     chown -R nginx:nginx /var/www/rainloop && \
