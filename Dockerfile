@@ -17,8 +17,7 @@ RUN apk add --no-cache \
     s6 \
     unzip \
     wget && \
-    rm /etc/nginx/conf.d/default.conf && \
-    rm /etc/php7/php-fpm.d/www.conf && \
+    rm /etc/php8/php-fpm.d/www.conf && \
     mkdir /var/run/nginx && \
     chown -R nginx:nginx /var/run/nginx 
 
