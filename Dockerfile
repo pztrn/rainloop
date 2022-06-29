@@ -1,4 +1,4 @@
-FROM code.pztrn.name/containers/mirror/alpine:3.16
+FROM code.pztrn.name/containers/mirror/alpine:3.16.0
 
 # Install necessary things
 RUN apk add --no-cache \
