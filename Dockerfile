@@ -17,9 +17,7 @@ RUN apk add --no-cache \
     s6 \
     unzip \
     wget && \
-    rm /etc/php8/php-fpm.d/www.conf && \
-    mkdir /var/run/nginx && \
-    chown -R nginx:nginx /var/run/nginx 
+    rm /etc/php8/php-fpm.d/www.conf
 
 # Get rainloop.
 RUN mkdir -p /var/www/rainloop && \
